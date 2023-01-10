@@ -2,7 +2,7 @@ package ejercicios;
 
 import java.util.Scanner;
 
-public class Ejercicio03 {
+public class Ejercicio03 {//////no lo tengo completo
 
 	public static void main(String[] args) {
 		// 3. Dado un array de reales del tamaño N, visualizar por pantalla todos los elementos del 
@@ -18,7 +18,7 @@ public class Ejercicio03 {
 		numeros = new int [longitud];
 		
 		System.out.println("Introduce el vector");
-		Vectores.pedir_vector(numeros);	
+		Vectores.pedirVector(numeros);	
 		
 		System.out.println("Introduce el intervalo a: ");
 		a = teclado.nextInt();

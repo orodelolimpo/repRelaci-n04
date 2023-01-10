@@ -17,13 +17,13 @@ public class Ejercicio02 {
 		
 		numeros = new int [longitud];
 		System.out.println("Introduce el vector");
-		Vectores.pedir_vector(numeros);
+		Vectores.pedirVector(numeros);
 		
 		System.out.println("Introduce el número límite: ");
 		int tope= teclado.nextInt();
 		
 		System.out.println("Los números son: ");
-		Vectores.mostrar_vector(numeros);
+		Vectores.mostrarVector(numeros);
 		
 		System.out.printf("Los número menores que %d son:\n ", tope);
 		Vectores.mostrarMenoresQue(numeros, tope);

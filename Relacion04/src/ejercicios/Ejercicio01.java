@@ -22,10 +22,10 @@ public class Ejercicio01 {
 		
 		System.out.println("Introduce los números: ");
 		//ahora llamo a la función,en concreto:
-		Vectores.pedir_vector(numeros);
+		Vectores.pedirVector(numeros);
 		
 		System.out.print("El vector es : ");
-		Vectores.mostrar_vector(numeros);
+		Vectores.mostrarVector(numeros);
 	}
 
 }

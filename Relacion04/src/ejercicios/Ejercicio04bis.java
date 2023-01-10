@@ -2,12 +2,11 @@ package ejercicios;
 
 import java.util.Scanner;
 
-public class Ejercicio04 {
+public class Ejercicio04bis {
 
 	public static void main(String[] args) {
-		// 4. Dado un array de enteros de tamaño N, rotar sus valores una posición a la izquierda, es 
-		//decir, si tenemos un array como el siguiente: 5 -1 -3 15 4, el resultado deberá ser el 
-		//array rotado a la izquierda: -1 -3 15 4 5.
+		// igual pero preguntando cuantas rotaciones a la izq quiero hacer
+		
 		
 		int vector[];
 		int tamaño;
@@ -16,6 +15,8 @@ public class Ejercicio04 {
 		System.out.println("Introduce el número de elementos del vector");
 		tamaño= teclado.nextInt();
 		vector=new int [tamaño];
+		System.out.println("¿Cuántas rotaciones quieres hacer");
+		int veces =teclado.nextInt();
 		
 
 		System.out.println("Introduce el vector");
@@ -23,13 +24,14 @@ public class Ejercicio04 {
 		
 		System.out.println("El vector es: ");
 		Vectores.mostrarVector(vector);
-		Vectores.rotarIzquierda (vector);
 		
+		for (int i=0; i<veces; i++) {
+			Vectores.rotarIzquierda (vector);
+		}
+		//si no quiero hacer este for hago otra función, que aunque se llame igual al pasar dos parámetros me coge la que necesita
+	
 		System.out.println("El vector rotados es");
 		Vectores.mostrarVector(vector);
-		
-		
-		
 		
 
 	}

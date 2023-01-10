@@ -2,12 +2,13 @@ package ejercicios;
 
 import java.util.Scanner;
 
-public class Ejercicio04 {
+public class Ejercicio05 {
 
 	public static void main(String[] args) {
-		// 4. Dado un array de enteros de tamaño N, rotar sus valores una posición a la izquierda, es 
+		// 5. Dado un array de enteros de tamaño N, rotar sus valores una posición a la derecha, es 
 		//decir, si tenemos un array como el siguiente: 5 -1 -3 15 4, el resultado deberá ser el 
-		//array rotado a la izquierda: -1 -3 15 4 5.
+		//array rotado a la derecha: 4 5 -1 -3 15.
+		
 		
 		int vector[];
 		int tamaño;
@@ -23,13 +24,10 @@ public class Ejercicio04 {
 		
 		System.out.println("El vector es: ");
 		Vectores.mostrarVector(vector);
-		Vectores.rotarIzquierda (vector);
+		Vectores.rotarDerecha (vector);
 		
 		System.out.println("El vector rotados es");
 		Vectores.mostrarVector(vector);
-		
-		
-		
 		
 
 	}
